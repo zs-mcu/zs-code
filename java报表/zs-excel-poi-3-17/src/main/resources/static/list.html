@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- 网页使用的语言 -->
+<html lang="zh-CN">
+<head>
+    <!-- 指定字符集 -->
+    <meta charset="UTF-8">
+    <!-- 使用Edge最新的浏览器的渲染方式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport视口：网页可以根据设置的宽度自动进行适配，在浏览器的内部虚拟一个容器，容器的宽度与设备的宽度相同。
+    width: 默认宽度与设备的宽度相同
+    initial-scale: 初始的缩放比，为1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>用户信息管理系统</title>
+
+    <!-- 1. 导入CSS的全局样式 -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="js/vuejs-2.5.16.js"></script>
+    <script src="js/axios-0.18.0.js"></script>
+    <style type="text/css">
+        td, th {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="app" class="container">
+    <h3 style="text-align: center">员工信息列表</h3>
+    <h5 style="text-align: right">
+        <button @click="downLoadXlsByJxl">使用JXL导出</button>
+    </h5>
+    <table border="1" class="table table-bordered table-hover">
+        <tr class="success">
+            <th>编号</th>
+            <th>姓名</th>
+            <th>手机号</th>
+            <th>入职日期</th>
+            <th>现住址</th>
+<!--            <th>操作</th>-->
+        </tr>
+        <tr v-for="user in userList">
+            <td>{{user.id}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.hireDate}}</td>
+            <td>{{user.address}}</td>
+<!--            <td>-->
+<!--                <a class="btn btn-default btn-sm">下载</a>-->
+<!--                <a class="btn btn-default btn-sm">合同</a>-->
+<!--            </td>-->
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            userList: [
+                {id: 1, userName: '张三', phone: '13812345678', hireDate: '2024-01-01', address: '北京市朝阳区'},
+                {id: 1, userName: '张三', phone: '13812345678', hireDate: '2024-01-01', address: '北京市朝阳区'},
+                {id: 1, userName: '张三', phone: '13812345678', hireDate: '2024-01-01', address: '北京市朝阳区'},
+                {id: 1, userName: '张三', phone: '13812345678', hireDate: '2024-01-01', address: '北京市朝阳区'},
+                {id: 1, userName: '张三', phone: '13812345678', hireDate: '2024-01-01', address: '北京市朝阳区'},
+            ],
+        },
+        created() {   //钩子函数 起到的作用就是页面加载函数
+            this.findPage();
+        },
+        methods: {
+            findPage() {
+                // 就是从后台获取所有用户的数据  ，后台的方法就是：http://localhost/user/findPage
+                // 向后台发送请求时我们需要借助 axios的工具
+                _this = this;
+                _this.userList = []
+                axios.get("/user/findPage").then(function (res) {
+                    _this.userList = res.data; //如果 出现在回调函数中的this关键字指的是window对象而不是Vue对象
+                })
+            },
+            downLoadXlsByJxl(){
+                window.open("/jxl/downLoadXlsByJxl");
+            }
+        }
+    })
+</script>

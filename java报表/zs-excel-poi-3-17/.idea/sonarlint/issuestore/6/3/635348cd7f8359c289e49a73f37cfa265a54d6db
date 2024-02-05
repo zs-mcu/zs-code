@@ -1,0 +1,94 @@
+
+o
+java:S1192œ"SDefine a constant instead of duplicating this literal "isPartOfRowsRegion" 3 times.(êá•Şşÿÿÿÿ
+_
+java:S1192è"HDefine a constant instead of duplicating this literal "#C5CBCF" 3 times.(ª×€¶
+e
+java:S1192"IDefine a constant instead of duplicating this literal "firstRow" 3 times.(ñæ¹Ôıÿÿÿÿ
+_
+java:S1192Ÿ"HDefine a constant instead of duplicating this literal "lastRow" 3 times.(¤ææÖ
+k
+java:S1192Ô"TDefine a constant instead of duplicating this literal "yyyy-MM-dd HH:mm:ss" 4 times.(Ø¿ê…
+]
+java:S1192ş"FDefine a constant instead of duplicating this literal "width" 3 times.(Ê‡š¤
+m
+java:S1192ı"QDefine a constant instead of duplicating this literal "yyyy-MM-dd HH:mm" 3 times.(êŒÌÀùÿÿÿÿ
+_
+java:S1192Ô"HDefine a constant instead of duplicating this literal "#FF0000" 4 times.(Ø¿ê…
+]
+java:S1192ÿ"GDefine a constant instead of duplicating this literal "height" 3 times.( €ò
+t	java:S135‹	"YReduce the total number of break and continue statements in this loop to use at most one.(Ùğúıÿÿÿÿ
+K
+java:S1066µ"/Merge this if statement with the enclosing one.(ÖÔ ôøÿÿÿÿ
+‡
+java:S1319Ñ"kThe type of "contentList" should be an interface such as "List" rather than the implementation "ArrayList".(äâ½«ÿÿÿÿÿ
+t
+java:S1488ö"]Immediately return this expression instead of assigning it to the temporary variable "value".(õğ‹‘
+b	java:S101."MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(İÏï‚
+D
+java:S5411"(Use a primitive boolean expression here.(ƒ®Î¨şÿÿÿÿ
+D
+java:S5411ß"(Use a primitive boolean expression here.(ƒ®Î¨şÿÿÿÿ
+e
+java:S2259"IA "NullPointerException" could be thrown; "cellContent" is nullable here.(¼õ§ÿÿÿÿÿ
+a
+java:S2095Â"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(ÊøƒÌ
+W	java:S107‡	"<Method has 8 parameters, which is greater than 7 authorized.(Ÿğ® ùÿÿÿÿ
+V	java:S125E"<This block of commented-out lines of code should be removed.(¡Æøÿÿÿÿ
+i
+java:S3776ğ"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(êÑôŸ
+@
+java:S1905")Remove this unnecessary cast to "double".(µÓÛÉ
+E
+java:S1905’")Remove this unnecessary cast to "double".( ¯¼·şÿÿÿÿ
+W	java:S125£"<This block of commented-out lines of code should be removed.(‡…Å§ûÿÿÿÿ
+i
+java:S3776¶"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Ã­Ó¢
+@
+java:S1905Ó")Remove this unnecessary cast to "double".(µÓÛÉ
+E
+java:S1905Ö")Remove this unnecessary cast to "double".( ¯¼·şÿÿÿÿ
+W	java:S125å"<This block of commented-out lines of code should be removed.(‡…Å§ûÿÿÿÿ
+W
+java:S1481ª";Remove this unused "countChineseCharacters" local variable.(­¹«œşÿÿÿÿ
+O
+java:S1481®"8Remove this unused "countChineseSymbols" local variable.(ÓçòÓ
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(˜„†Èıÿÿÿÿ
+n
+java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Éó·ÿÿÿÿÿ
+8
+java:S2111‰"!Use "BigDecimal.valueOf" instead.(ºû•…
+n
+java:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ğåå²şÿÿÿÿ
+W	java:S125Ÿ"<This block of commented-out lines of code should be removed.(ıñ§Åùÿÿÿÿ
+W	java:S125¯"<This block of commented-out lines of code should be removed.(µ½¶Âúÿÿÿÿ
+R	java:S125è"<This block of commented-out lines of code should be removed.(¿ÃÜ‰
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(Ë³—íıÿÿÿÿ
+F
+java:S2093¹"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+n
+java:S3776Ø"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(´Îúÿÿÿÿ
+N
+java:S1135ß"2Complete the task associated to this TODO comment.(Ï¾·ïûÿÿÿÿ
+n
+java:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(“Ãùïûÿÿÿÿ
+n
+java:S3776‡	"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Ÿğ® ùÿÿÿÿ
+W	java:S125Ö	"<This block of commented-out lines of code should be removed.(«ÖŞßÿÿÿÿÿ
+W	java:S125Š
+"<This block of commented-out lines of code should be removed.(ßƒöşÿÿÿÿ
+I
+java:S1135‰
+"2Complete the task associated to this TODO comment.(°‡ÂÄ
+D	java:S108«
+")Either remove or fill this block of code.(Éœ²©ıÿÿÿÿ
+A	java:S106¹
+"+Replace this use of System.out by a logger.(Ñ‘
+F	java:S106º
+"+Replace this use of System.out by a logger.(ûÒáıÿÿÿÿ
+D	java:S108Ş
+")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
+D	java:S108ù
+")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
+â
+java:S6541Ú"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 66 to 64, Complexity from 15 to 14, Nesting Level from 4 to 2, Number of Variables from 10 to 6.(Éó·ÿÿÿÿÿ
